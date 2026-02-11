@@ -1,7 +1,7 @@
 :root {
   --bg: #F5EFEA;
-  --text: #4B2E2B;
-  --accent: #C9A24D;
+  --text: #f5eceb;
+  --accent: #decca5;
   --card: #E6D5C3;
 }
 
@@ -50,7 +50,7 @@ nav h1 {
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 120px;
 }
 
 .title {
@@ -135,6 +135,7 @@ form button {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+  font-family: 'sweet_creamy_2';
 }
 

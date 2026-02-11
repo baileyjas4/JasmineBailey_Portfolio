@@ -1,38 +1,64 @@
 <!DOCTYPE html>
+<!-- Declares the document type and HTML version (HTML5) -->
 <html lang="en">
+<!-- Root element of the webpage. lang="en" helps with accessibility and SEO -->
+
 <head>
+  <!-- Sets character encoding to support most characters and symbols -->
   <meta charset="UTF-8" />
+
+  <!-- Makes the site responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Title shown in the browser tab -->
   <title>Jasmine Bailey | Full Stack Developer</title>
+
+  <!-- Links external CSS file for styling -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Links external JavaScript file (defer ensures it loads after HTML is parsed) -->
   <script defer src="script.js"></script>
 </head>
 
 <body>
+
+  <!-- ================= NAVIGATION ================= -->
   <nav>
+    <!-- Logo / Initials -->
     <h1>JB</h1>
+
+    <!-- Navigation buttons -->
     <div class="nav-links">
+      <!-- Buttons scroll to different sections of the page -->
       <button onclick="scrollTo('skills')">Skills</button>
       <button onclick="scrollTo('work')">Work</button>
       <button onclick="scrollTo('contact')">Contact</button>
+
+      <!-- Theme toggle button (controlled in script.js) -->
       <button id="themeToggle">🌙</button>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ================= HERO SECTION ================= -->
+  <!-- Main introduction section -->
   <section class="hero fade">
     <h2>Jasmine Bailey</h2>
+
+    <!-- Job title -->
     <p class="title">Full Stack MERN Software Developer</p>
+
+    <!-- Short description -->
     <p class="subtitle">
       Beginner developer crafting elegant, user-centered web applications
       with modern technologies.
     </p>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ================= SKILLS SECTION ================= -->
   <section id="skills" class="fade">
     <h2>Skills</h2>
 
+    <!-- Frontend Skills Group -->
     <div class="skill-group">
       <h3>Frontend</h3>
       <div class="skills">
@@ -43,6 +69,7 @@
       </div>
     </div>
 
+    <!-- Backend Skills Group -->
     <div class="skill-group">
       <h3>Backend</h3>
       <div class="skills">
@@ -52,6 +79,7 @@
       </div>
     </div>
 
+    <!-- Tools Skills Group -->
     <div class="skill-group">
       <h3>Tools</h3>
       <div class="skills">
@@ -62,51 +90,100 @@
     </div>
   </section>
 
-  <!-- WORK -->
+  <!-- ================= WORK / PROJECTS SECTION ================= -->
   <section id="work" class="fade">
     <h2>Selected Work</h2>
 
     <div class="projects">
+
+      <!-- Individual project card -->
       <div class="project-card">
         <h3>MERN App</h3>
         <p>Full-stack CRUD app using MongoDB, Express, React & Node.</p>
       </div>
 
+      <!-- Individual project card -->
       <div class="project-card">
         <h3>Portfolio Website</h3>
         <p>Luxury-themed responsive portfolio with animations.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ================= CONTACT SECTION ================= -->
   <section id="contact" class="fade">
     <h2>Contact</h2>
+
+    <!-- Contact form -->
     <form>
+      <!-- Name input (required) -->
       <input type="text" placeholder="Name" required />
+
+      <!-- Email input with built-in email validation -->
       <input type="email" placeholder="Email" required />
+
+      <!-- Message text area -->
       <textarea placeholder="Message"></textarea>
+
+      <!-- Submit button -->
       <button type="submit">Send Message</button>
     </form>
   </section>
 
+  <!-- ================= FOOTER ================= -->
   <footer>
+    <!-- Copyright notice -->
     <p>© 2026 Jasmine Bailey</p>
   </footer>
+
 </body>
 </html>
 
+<!-- ================= BACKGROUND VIDEO ================= -->
+
+<!-- Autoplaying, muted, looping background video -->
 <video autoplay muted loop playsinline id="bg-video" width="100%">
   <source src="./assets/16453-272487468_medium.mp4" type="video/mp4">
+  <!-- Fallback text if video is not supported -->
   Your browser does not support the video tag.
 </video>
 
+<!-- ================= VIDEO STYLING ================= -->
 <style>
+  /* Styles the background video to cover the entire screen */
   #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
+    position: fixed;      /* Stays fixed while scrolling */
+    top: 0;               /* Align to top */
+    left: 0;              /* Align to left */
+    object-fit: cover;    /* Ensures video covers entire screen */
+    z-index: -1;          /* Sends video behind all content */
+  }
+</style>
+
+<!-- ================= CUSTOM FONT ================= -->
+<style>
+  /* Import custom font from local assets */
+  @font-face {
+    font-family: 'sweet_creamy_2';
+    src: url('./assets/sweet_creamy_2/Sweet\ Creamy.ttf') format('truetype');
+  }
+
+  /* Apply custom font to all h2 headings */
+  h2 {
+    font-family: 'sweet_creamy_2';
+  }
+
+  /* Specifically apply font to hero section heading */
+  .hero h2 {
+    font-family: 'sweet_creamy_2';
+  }
+</style>
+
+<!-- ================= CUSTOM CURSOR ================= -->
+<style>
+  /* Changes the default mouse cursor to a decorative cursor */
+  body {
+    cursor: url("https://cur.cursors-4u.net/nature/nat-8/nat791.cur"), auto !important;
   }
 </style>
