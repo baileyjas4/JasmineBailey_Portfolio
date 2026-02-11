@@ -1,0 +1,140 @@
+:root {
+  --bg: #F5EFEA;
+  --text: #4B2E2B;
+  --accent: #C9A24D;
+  --card: #E6D5C3;
+}
+
+body.dark {
+  --bg: #1E1B18;
+  --text: #F5EFEA;
+  --card: #2C2521;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.4s ease;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav h1 {
+  font-weight: 700;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.title {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 40px;
+}
+
+.skills button {
+  background: var(--card);
+  border: none;
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.skills button:hover {
+  background: var(--accent);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  width: 260px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTACT */
+form {
+  max-width: 400px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+form button {
+  background: var(--accent);
+  border: none;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
