@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Jasmine Bailey</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <nav>
+    <h1><a href="index.html">JB</a></h1>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="downloadResume()">Resume</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="about-page fade">
+    <h2>About Me</h2>
+    
+    <div class="about-content">
+      <div class="about-image">
+        <img id="profileImage" src="./assets/IMG_3496.JPG" alt="Jasmine Bailey" />
+      </div>
+      
+      <div class="about-text">
+        <p>
+          Hi! I'm Jasmine, a passionate full-stack developer specializing in the MERN stack. 
+          I love creating beautiful, functional web applications that solve real-world problems.
+        </p>
+        <p>
+          With a keen eye for design and a commitment to clean code, I strive to build 
+          experiences that are both visually appealing and technically sound. When I'm not 
+          coding, you can find me exploring new technologies and contributing to open-source projects.
+        </p>
+        <p>
+          My journey into web development started with a curiosity about how websites work, 
+          and it has grown into a passion for creating seamless digital experiences. I believe 
+          in continuous learning and staying up-to-date with the latest industry trends.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-detailed">
+      <h3>Technical Skills</h3>
+      
+      <div class="skill-category">
+        <h4>Frontend Development</h4>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <span class="skill-name">HTML/CSS</span>
+            <div class="bar"><div class="fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">JavaScript</span>
+            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">React</span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Backend Development</h4>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <span class="skill-name">Node.js</span>
+            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">Express</span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">MongoDB</span>
+            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Tools & Technologies</h4>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <span class="skill-name">Git/GitHub</span>
+            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">Postman</span>
+            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Jasmine Bailey</p>
+  </footer>
+
+</body>
+</html>

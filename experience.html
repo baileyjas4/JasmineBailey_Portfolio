@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience | Jasmine Bailey</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <nav>
+    <h1><a href="index.html">JB</a></h1>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="downloadResume()">Resume</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section class="experience-page fade">
+    <h2>My Work</h2>
+
+    <div class="carousel-container">
+      <button class="carousel-btn" onclick="moveProjectCarousel(-1)">‹</button>
+      
+      <div class="carousel">
+        <div class="carousel-track" id="projectCarouselTrack">
+          <!-- Projects will be loaded here from GitHub API -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/400x250/E6D5C3/5a4a42?text=Loading..." alt="Loading" />
+            </div>
+            <div class="project-content">
+              <h3>Loading Projects...</h3>
+              <p>Fetching your GitHub repositories...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-btn" onclick="moveProjectCarousel(1)">›</button>
+    </div>
+
+    <div class="carousel-indicators" id="projectIndicators">
+      <!-- Indicators will be generated dynamically -->
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Jasmine Bailey</p>
+  </footer>
+
+</body>
+</html>
