@@ -299,7 +299,7 @@ async function fetchGitHubRepos() {
     { name: 'JasmineBailey_Portfolio', liveUrl: 'https://github.com/baileyjas4/JasmineBailey_Portfolio' },
     { name: 'pokicards', liveUrl: 'https://baileyjas4.github.io/pokicards/' },
     { name: 'flashcards-a1', liveUrl: 'https://baileyjas4.github.io/flashcards-a1/' },
-    { name: 'MoniquesCritique-frontend', liveUrl: 'https://github.com/baileyjas4/MoniquesCritique-frontend' },
+    { name: 'MoniquesCritique-frontend', liveUrl: 'https://moniquescritique-frontend.onrender.com/' },
     { name: 'MoniquesCritique-backend', liveUrl: 'https://github.com/baileyjas4/MoniquesCritique-backend' },
     { name: 'Taskmanagmentapp', liveUrl: 'https://baileyjas4.github.io/Taskmanagmentapp/' },
     { name: 'React-Counter', liveUrl: 'https://baileyjas4.github.io/React-Counter/' }
